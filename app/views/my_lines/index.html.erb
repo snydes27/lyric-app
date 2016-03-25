@@ -1,0 +1,7 @@
+<h1>My Lines</h1>
+<h3><%= pluralize(@lines.size, 'Line') %></h3>
+<ul>
+  <% @lines.each do |line| %>
+  <li><%= line %></li>
+  <% end %>
+</ul>
