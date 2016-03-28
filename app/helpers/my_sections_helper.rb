@@ -1,0 +1,2 @@
+module MySectionsHelper
+end

@@ -1,0 +1,7 @@
+<h1>My Sections</h1>
+<h3><%= pluralize(@sections.size, 'Section') %></h3>
+<ul>
+  <% @sections.each do |section| %>
+  <li><%= section %></li>
+  <% end %>
+</ul>

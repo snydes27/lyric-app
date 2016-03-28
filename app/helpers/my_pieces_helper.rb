@@ -1,0 +1,2 @@
+module MyPiecesHelper
+end
