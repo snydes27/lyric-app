@@ -1,4 +1,5 @@
 <h1><%= @piece.title %></h1>
 <p><%= @piece.content %></p>
 
-<%= link_to("All Pieces", my_pieces_path) %>
+<%= link_to("All Pieces", piece_path) %>
+<%= link_to("Edit", edit_piece_path(@piece)) %>

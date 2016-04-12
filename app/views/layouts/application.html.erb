@@ -6,9 +6,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+<header>
+  <%= link_to("My Lines", lines_path)%>
+  <%= link_to("My Sections", sections_path)%>
+  <%= link_to("My Pieces", pieces_path)%>
+</header>
 <body>
 
 <%= yield %>
 
 </body>
+<%= render 'footer' %>
 </html>

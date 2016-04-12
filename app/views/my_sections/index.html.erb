@@ -1,7 +1,8 @@
 <h1>My Sections</h1>
-<h3><%= pluralize(@sections.size, 'Section') %></h3>
+<h3><%= pluralize(@section.size, 'Section') %></h3>
 <ul>
-  <% @sections.each do |section| %>
-  <li><%= section %></li>
+  <% @section.each do |section| %>
+  <li class="line"><%= section.content %></li>
   <% end %>
 </ul>
+<%= link_to("New Section", new_section_path) %>

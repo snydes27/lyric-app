@@ -1,7 +1,8 @@
 <h1>My Lines</h1>
-<h3><%= pluralize(@lines.size, 'Line') %></h3>
+<h3><%= pluralize(@line.size, 'Line') %></h3>
 <ul>
-  <% @lines.each do |line| %>
-  <li><%= line %></li>
+  <% @line.each do |line| %>
+  <li class="line"><%= line.content %></li>
   <% end %>
 </ul>
+<%= link_to("New Line", new_line_path) %>

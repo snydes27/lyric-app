@@ -1,0 +1,10 @@
+<%= form_for(@line) do |f| %>
+<p>
+  <%= f.label :content %><br/>
+  <%= f.text_field :content, autofocus: true %>
+</p>
+<p>
+  <%= f.submit %>
+  <%= link_to "Cancel", lines_path %>
+</p>
+<% end %>

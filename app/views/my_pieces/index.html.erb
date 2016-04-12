@@ -1,7 +1,10 @@
 <h1>My Creative Pieces</h1>
-<h3><%= pluralize(@pieces.size, 'Piece') %></h3>
+<h3><%= pluralize(@piece.size, 'Piece') %></h3>
 <ul>
-  <% @pieces.each do |piece| %>
-  <li><%= piece %><%= " " %><%= link_to("View this Piece", piece_path(piece))%></li>
+  <% @piece.each do |piece| %>
+  <li>
+    <strong><%= piece.title %></strong><br/>
+    <%= piece.content %><%= " " %><%= link_to("View this Piece", piece_path(piece))%></li>
   <% end %>
 </ul>
+<%= link_to("New Piece", new_piece_path) %>
